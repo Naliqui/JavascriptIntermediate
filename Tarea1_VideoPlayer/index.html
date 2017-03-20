@@ -1,0 +1,35 @@
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>My Heart Skips a Bit</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="styles/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="video-container">
+                <video id="video" width="100%">
+                    <source src="media/Lenka - Heart Skips A Beat.mp4" type="video/mp4">
+                    <source src="media/Lenka - Heart Skips A Beat.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div id="video-poster"><img src="media/love-heart-hand-romantic.jpg"/></div>
+                <div id="video-error"><img src="media/error.jpg"/><p>Video not loading</p></div>
+                <div id="video-play" onclick='toggle()'>
+                    <i class="fa fa-play fa-5x" aria-hidden="true"></i>
+                </div>
+                <div id="video-replay" onclick='replay()'>
+                    <i class="fa fa-undo fa-5x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id='video-controls'>
+                <i id="play-btn" class="fa fa-pause fa-lg" aria-hidden="true" onclick='toggle()'></i>
+                <i class="fa fa-stop fa-lg" aria-hidden="true" onclick='stop();'></i>
+                <i id="mute-btn" class="fa fa-volume-up fa-lg" aria-hidden="true" onclick='mute();'></i>
+                <p id="video-timer">00:00:00</p>
+                <input type="range" id='progress-bar' min='0' max='100' value='0' step="1">  
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
