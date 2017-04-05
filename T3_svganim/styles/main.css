@@ -1,0 +1,9 @@
+body{margin: 0; padding: 0;}
+.wrapper, section{margin: 0 auto;}
+section{width: 720px;}
+header, footer{
+    width: 100%; padding: 30px; 
+    background-color: #666666;
+    text-align: center;
+    color: #ffffff;
+    }
